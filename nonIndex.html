@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>json exempel 1</title>
+<meta charset="UTF-8">
+</head>
+    <body>
+        <div id="benis">
+        </div>
+    </body>
+
+<script>
+var benis = '{ "records" : [' +
+  '{"title":"Tanssilaulu", "Artist":"Matti&Teppo", "Genre":"iskelmä", "Year":"1985", "company":"Oh bro AB", "producer":"That Bro"},' +
+  '{"title":"Oispa kaljaa", "Artist":"Matti Nykänen", "Genre":"hyppylaulut", "Year":"1998", "company":"Kaljaa AB", "producer":"Mervi Tapola "},' +
+  '{"title":"Ei ollu", "Artist":"Kaljamiehet", "Genre":"grindcore", "Year":"2005", "company":"Dat Beer Oy", "producer":"No hoe"},' +
+  '{"title":"Benis", "Artist":"Rane ja kollit", "Genre":"humppa", "Year":"1999", "company":"Ei ollut kaljaa Oy", "producer":"Veli Bro"} ]}';
+var benis = JSON.parse(benis);
+
+
+    
+
+    
+function benisTulostus(arr) {
+    var out = "";
+    var i;
+    console.log("benis");
+    for(i = 0; i < arr.records.length; i++) {
+        out += '<ul>';
+        out += '<li>Title: ' + arr.records[i].title + '</li>';
+        out += '<li>Artist: ' + arr.records[i].Artist + '</li>';
+        out += '<li>Genre: ' + arr.records[i].Genre + '</li>';
+        out += '<li>Year: ' + arr.records[i].Year + '</li>';
+        out += '<li>Company: ' + arr.records[i].company + '</li>';
+        out += '<li>Producer: ' + arr.records[i].producer + '</li>';
+        out += '</ul>';
+    }
+    document.getElementById("benis").innerHTML = out;
+}
+
+benisTulostus(benis);
+</script>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paulslibrary>
+    <skiva>
+        <titel>Oh my gosh!</titel>
+        <artist>Matti nykänen</artist>
+        <genre>skit</genre>
+        <year>1987</year>
+        <company>Kotikalja Oy</company>
+        <producer>Mervi Nykänen</producer>
+    </skiva>
+    <skiva>
+        <titel>Voi veljet</titel>
+        <artist>Metti ja Teppo</artist>
+        <genre>inhemsk</genre>
+        <year>1994</year>
+        <company>Kotipoltto Oy</company>
+        <producer>Tuottaja Oy</producer>
+    </skiva>
+    <skiva>
+        <titel>Benis!</titel>
+        <artist>Henry Saari</artist>
+        <genre>love</genre>
+        <year>2004</year>
+        <company>Hotlips Oy</company>
+        <producer>Rakel Liekki</producer>
+    </skiva>
+    <skiva>
+        <titel>Tiivitaavin seikkailut</titel>
+        <artist>Tiivitaavi</artist>
+        <genre>lila</genre>
+        <year>2007</year>
+        <company>Rainbow Oy</company>
+        <producer>Teuvo Loman</producer>
+    </skiva>
+</paulslibrary>
