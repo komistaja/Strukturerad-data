@@ -16,7 +16,8 @@ while($row=mysqli_fetch_array($r_students)) {
     ';
 }
 $json .= ']}';
-
-echo $json;
+Header("Access-Control-Allow-Origin: *");
+Header("Content-type: application/json charset=utf-8");
+echo str_replace(',\n\t]', ']', $json);
 
 ?>
